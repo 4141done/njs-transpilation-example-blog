@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "marked": "^4.1.0"
+  },
+  "devDependencies": {
+    "core-js": "^3.25.5"
   }
 }
