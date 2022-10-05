@@ -1,3 +1,4 @@
+import 'core-js/actual/set';
 import { marked } from 'marked';
 
 function serveMarkdown(r) {
