@@ -1,5 +1,10 @@
-function hello(r) {
-  r.return(200, 'Hello, World');
+import { marked } from 'marked';
+
+function serveMarkdown(r) {
+  const html = marked.parse('# Marked in Node.js\n\nRendered by **marked**.');
+  
+  r.headersOut['Content-Type'] = 'text/html'; 
+  r.return(200, html);
 }
 
-export default { hello };
+export default { serveMarkdown };
